@@ -3,12 +3,8 @@
     padding: 0;
 
     box-sizing: border-box;
-}
 
-body {
     font-family: Outfit;
-    font-feature-settings: 'liga' off, 'clig' off;
-
 }
 
 .screen {
@@ -17,61 +13,64 @@ body {
 
     background-color: #0D192C;
 
+    padding: 152px 527px 152px 563px;
+
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: center;
 }
 
 .container {
     width: 350px;
     height: 596px;
 
+    border-radius: 15px;
+
     background-color: #15263F;
 
-    border-radius: 15px;
-    box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.10);
+    flex-shrink: 0;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.imgScreen {
+.imgContainer {
     display: flex;
     justify-content: center;
-    border-radius: 37px;
+
     padding-top: 24px;
 }
 
-.pictureRec {
+#RectangleIMG {
     width: 302px;
     height: 302px;
+    
+    border-radius: 37px;
+    flex-shrink: 0;
 
-    background: url(Rectangle\ Copy.png) lightgray 50% / cover no-repeat;
 }
 
-.content {
-    padding-top: 24px;
-}
-
-#p1 {
+.nameTextContainer {
     width: 302px;
     height: 28px;
 
     color: #FFF;
-        
     font-size: 22px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+
+    padding-top: 24px;
+    padding-bottom: 24px;
+
 }
 
-#p2 {
+.descTextContainer {
     width: 302px;
     height: 52px;
 
     color: #8BACD9;
-    
     font-size: 18px;
     font-style: normal;
     font-weight: 300;
@@ -80,12 +79,29 @@ body {
     padding-top: 16px;
 }
 
-.eth {
+.floorContainer {
     width: 301px;
     height: 20px;
-    display: inline-flex;
+
+    display: flex;
+    flex-direction: row;
+
     padding-top: 24px;
-    padding-left: 41.48px;
-    justify-content: center;
-    align-items: flex-start;
+}
+
+#ethIMG {
+    width: 11px;
+    height: 18px;
+
+    fill: var(--Cyan, #00FFF8);
+}
+
+#textP3 {
+
+    color: #00FFF8;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
